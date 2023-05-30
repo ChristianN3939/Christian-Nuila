@@ -1,0 +1,19 @@
+<script>
+  var values = [];
+
+  //ask for a value totalValues times
+  var totalValues = prompt("How many numbers do you want to average?")
+  for (var i=0; i < totalValues; i++) {
+    values[i] = prompt("Enter value #" + (i+1));
+  }
+
+  var sum = 0;
+  // loop through each value and add them to sum
+  for (var i=0; i < totalValues; i++) {
+    sum+= parseInt(values[i]);
+  }
+
+  var result = (sum / totalValues);
+  document.write("The average of the values is: " + result);
+  
+</script>
